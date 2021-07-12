@@ -4,13 +4,7 @@ import InsertForm from "./InsertForm";
 import axios from "axios";
 
 export default function ShoppingList() {
-  // Fake data
   const [items, setItems] = useState([]);
-  //   { id: 1, text: "Pão" },
-  //   { id: 2, text: "Salsicha" },
-  //   { id: 3, text: "Ketchup" },
-  // ]);
-
   useEffect(loadItems, []);
 
   function loadItems() {
